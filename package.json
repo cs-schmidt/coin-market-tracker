@@ -1,10 +1,7 @@
 {
-  "private": true,
   "name": "coin-market-tracker",
+  "private": true,
   "description": "A cryptocurrency web platform showing the latest coins, prices, and market news.",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "homepage": "https://github.com/cs-schmidt/coin-market-tracker#readme",
   "bugs": {
     "url": "https://github.com/cs-schmidt/coin-market-tracker/issues"
@@ -14,5 +11,15 @@
     "url": "git+https://github.com/cs-schmidt/coin-market-tracker"
   },
   "license": "MIT",
-  "author": "Ethan Schmidt <ebs.euler@gmail.com> (https://cs-schmidt.dev/)"
+  "author": "Ethan Schmidt <ebs.euler@gmail.com> (https://cs-schmidt.dev/)",
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.7.2",
+    "@commitlint/config-conventional": "^17.7.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "sort-package-json": "^2.6.0"
+  }
 }
